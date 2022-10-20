@@ -1,0 +1,22 @@
+{
+	"name": "DWDB1",
+	"properties": {
+		"Name": "DWDB1",
+		"EntityType": "DATABASE",
+		"Origin": {
+			"Type": "SPARK"
+		},
+		"Properties": {
+			"IsSyMSCDMDatabase": true
+		},
+		"Source": {
+			"Provider": "ADLS",
+			"Location": "abfss://dbe-synps-root@azcacdbesynpspocstrg01.dfs.core.windows.net/synapse/workspaces/az-cac-dbe-synps-svr-d01/warehouse/DWDB1",
+			"Properties": {
+				"FormatType": "csv",
+				"LinkedServiceName": "az-cac-dbe-synps-svr-d01-WorkspaceDefaultStorage"
+			}
+		}
+	},
+	"type": "DATABASE"
+}
